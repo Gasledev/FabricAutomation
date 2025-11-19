@@ -21,16 +21,16 @@ To make sure nothing was lost, I collected **all questions + full answers** into
 
 ## 📄 Q&A Document
 
-**[GitGood-QA.md](GitGood QA)**\
+**[GitGood Q&A](GitGood-QA.md)**
 A complete list of attendee questions with clarified and extended answers.
 
 ------------------------------------------------------------------------
 
 ## 🔗 Additional Resources
--   Webinar recording: [https://www.sharepointeurope.com/webinars/git-good-best-practices-for-ci-cd-and-collaboration-in-microsoft-fabric/](View the recording here...)
--   My Blog: [https://peerinsights.emono.dk/](https://peerinsights.emono.dk/)
--   Fabric CLI: [https://microsoft.github.io/fabric-cli/](https://microsoft.github.io/fabric-cli/)
--   Fabric CI/CD Library: [https://microsoft.github.io/fabric-cicd/latest/](https://microsoft.github.io/fabric-cicd/latest/)
+-   Webinar recording: [View the recording here](https://www.sharepointeurope.com/webinars/git-good-best-practices-for-ci-cd-and-collaboration-in-microsoft-fabric/)
+-   My Blog: [peerinsights.emono.dk](https://peerinsights.emono.dk/)
+-   Fabric CLI: [microsoft.github.io/fabric-cli](https://microsoft.github.io/fabric-cli/)
+-   Fabric CI/CD Library: [microsoft.github.io/fabric-cicd](https://microsoft.github.io/fabric-cicd/latest/)
 ------------------------------------------------------------------------
 
 ## 🙌 Thanks

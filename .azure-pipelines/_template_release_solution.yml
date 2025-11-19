@@ -45,9 +45,9 @@ jobs:
     - script: python -u automation/scripts/fabric_release.py --environment ${{ parameters.environment }} --repo_path "$(Pipeline.Workspace)/solution"
       displayName: 'Run Fabric release script'
       env:
-        TENANT_ID: $(SPN_TENANT_ID)
-        CLIENT_ID: $(SPN_CLIENT_ID)
-        CLIENT_SECRET: $(SPN_CLIENT_SECRET)
+        FAB_TENANT_ID: $(SPN_TENANT_ID)
+        FAB_SPN_CLIENT_ID: $(SPN_CLIENT_ID)
+        FAB_SPN_CLIENT_SECRET: $(SPN_CLIENT_SECRET)
 
     - task: Bash@3
       name: generate_connectionstring
@@ -64,10 +64,10 @@ jobs:
           CONNECTION_STRING=$(cat conn.txt)
           echo "##vso[task.setvariable variable=connection_string]$CONNECTION_STRING"
       env:
-        TENANT_ID: $(SPN_TENANT_ID)
-        CLIENT_ID: $(SPN_CLIENT_ID)
-        CLIENT_SECRET: $(SPN_CLIENT_SECRET)
-
+        FAB_TENANT_ID: $(SPN_TENANT_ID)
+        FAB_SPN_CLIENT_ID: $(SPN_CLIENT_ID)
+        FAB_SPN_CLIENT_SECRET: $(SPN_CLIENT_SECRET)
+        
     - task: Bash@3
       displayName: 'Install sqlpackage'
       inputs:

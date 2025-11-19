@@ -6,9 +6,9 @@ default_branch_name = os.environ.get('GITHUB_REF_NAME') if os.environ.get('GITHU
 
 # Get arguments 
 parser = argparse.ArgumentParser(description="Fabric feature maintainance arguments")
-parser.add_argument("--tenant_id", required=False, default=os.environ.get('TENANT_ID'), help="Azure Active Directory (Microsoft Entra ID) tenant ID used for authenticating with Fabric APIs. Defaults to the TENANT_ID environment variable.")
-parser.add_argument("--client_id", required=False, default=os.environ.get('CLIENT_ID'), help="Client ID of the Azure AD application registered for accessing Fabric APIs. Defaults to the CLIENT_ID environment variable.")
-parser.add_argument("--client_secret", required=False, default=os.environ.get('CLIENT_SECRET'), help="Client secret of the Azure AD application registered for accessing Fabric APIs. Defaults to the CLIENT_SECRET environment variable.")
+parser.add_argument("--tenant_id", required=False, default=os.environ.get('FAB_TENANT_ID'), help="Azure Active Directory (Microsoft Entra ID) tenant ID used for authenticating with Fabric APIs. Defaults to the TENANT_ID environment variable.")
+parser.add_argument("--client_id", required=False, default=os.environ.get('FAB_SPN_CLIENT_ID'), help="Client ID of the Azure AD application registered for accessing Fabric APIs. Defaults to the CLIENT_ID environment variable.")
+parser.add_argument("--client_secret", required=False, default=os.environ.get('FAB_SPN_CLIENT_SECRET'), help="Client secret of the Azure AD application registered for accessing Fabric APIs. Defaults to the CLIENT_SECRET environment variable.")
 parser.add_argument("--branch_name", required=False, default=default_branch_name, help="The name of the Git feature branch to operate on. Used for workspace setup, automation, and CI/CD logic. Defaults to a predefined variable `branch_name`.")
 parser.add_argument("--action", required=False, default="create", help="Action to perform: `create` to set up a new feature branch and workspace, `update` to synchronize repos and workspaces, `delete` to clean up. Default is `create`.")
 

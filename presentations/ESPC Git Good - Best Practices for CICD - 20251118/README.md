@@ -15,14 +15,10 @@ The session covered:
 - Real-world lessons learned from building Fabric data platforms
 
 A lot of excellent questions came in during the session - more than we had time to address live.  
+  
 To make sure nothing was lost, I collected **all questions + full answers** into a dedicated Q&A document.
 
-------------------------------------------------------------------------
-
-## 📄 Q&A Document
-
-**[GitGood Q&A](GitGood-QA.md)**
-A complete list of attendee questions with clarified and extended answers.
+**[GitGood Q&A](GitGood-QA.md)** : A complete list of attendee questions with clarified and extended answers.
 
 ------------------------------------------------------------------------
 

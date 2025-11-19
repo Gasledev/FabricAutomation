@@ -23,6 +23,7 @@ To make sure nothing was lost, I collected **all questions + full answers** into
 ------------------------------------------------------------------------
 
 ## 🔗 Additional Resources
+-   The presentation from the webinar: [View it here](Git%20Good%20-%20Best%20Practices%20for%20CICD%20and%20Collaboration%20in%20Microsoft%20Fabric%20(ESPC%20Webinar).pdf)
 -   Webinar recording: [View the recording here](https://www.sharepointeurope.com/webinars/git-good-best-practices-for-ci-cd-and-collaboration-in-microsoft-fabric/)
 -   My Blog: [peerinsights.emono.dk](https://peerinsights.emono.dk/)
 -   Fabric CLI: [microsoft.github.io/fabric-cli](https://microsoft.github.io/fabric-cli/)

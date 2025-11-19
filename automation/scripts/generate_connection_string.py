@@ -11,9 +11,9 @@ parser.add_argument("--environment", required=True, help="Name of environment to
 parser.add_argument("--layer", required=True, help="Name of layer to generate connection string for.")
 parser.add_argument("--database", required=True, help="Name of database to generate connection string for.")
 parser.add_argument('--output_file', required=True, help="Path to output file where the connection string will be saved.")
-parser.add_argument("--tenant_id", required=False, default=os.environ.get('TENANT_ID'), help="Azure Active Directory (Microsoft Entra ID) tenant ID used for authenticating with Fabric APIs. Defaults to the TENANT_ID environment variable.")
-parser.add_argument("--client_id", required=False, default=os.environ.get('CLIENT_ID'), help="Client ID of the Azure AD application registered for accessing Fabric APIs. Defaults to the CLIENT_ID environment variable.")
-parser.add_argument("--client_secret", required=False, default=os.environ.get('CLIENT_SECRET'), help="Client secret of the Azure AD application registered for accessing Fabric APIs. Defaults to the CLIENT_SECRET environment variable.")
+parser.add_argument("--tenant_id", required=False, default=os.environ.get('FAB_TENANT_ID'), help="Azure Active Directory (Microsoft Entra ID) tenant ID used for authenticating with Fabric APIs. Defaults to the TENANT_ID environment variable.")
+parser.add_argument("--client_id", required=False, default=os.environ.get('FAB_SPN_CLIENT_ID'), help="Client ID of the Azure AD application registered for accessing Fabric APIs. Defaults to the CLIENT_ID environment variable.")
+parser.add_argument("--client_secret", required=False, default=os.environ.get('FAB_SPN_CLIENT_SECRET'), help="Client secret of the Azure AD application registered for accessing Fabric APIs. Defaults to the CLIENT_SECRET environment variable.")
 
 args = parser.parse_args()
 environment = args.environment

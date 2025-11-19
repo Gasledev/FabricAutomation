@@ -33,9 +33,9 @@ jobs:
     - script: python -u automation/scripts/utils_build_parameter_file.py --environments ${{ parameters.environments }}
       displayName: 'Build parameter files'
       env:
-        TENANT_ID: $(SPN_TENANT_ID)
-        CLIENT_ID: $(SPN_CLIENT_ID)
-        CLIENT_SECRET: $(SPN_CLIENT_SECRET)
+        FAB_TENANT_ID: $(SPN_TENANT_ID)
+        FAB_SPN_CLIENT_ID: $(SPN_CLIENT_ID)
+        FAB_SPN_CLIENT_SECRET: $(SPN_CLIENT_SECRET)
 
     - task: UseDotNet@2
       inputs:

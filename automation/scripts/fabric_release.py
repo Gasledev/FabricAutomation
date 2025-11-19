@@ -26,9 +26,9 @@ parser.add_argument("--layers", required=False, default=default_stages_in_scope,
 parser.add_argument("--item_types", required=False, default=default_item_types_in_scope, help="Comma seperated list of item types in scope. Must match Fabric ItemTypes exactly.")
 parser.add_argument("--repo_path", required=False, default=default_solution_path, help="Path the the solution repository where items are stored.")
 parser.add_argument("--unpublish_items", required=False, default=True, help="Whether to unpublish orphan items that are no longer in the repository. Default is True.")
-parser.add_argument("--tenant_id", required=False, default=os.environ.get('TENANT_ID'), help="Azure Active Directory (Microsoft Entra ID) tenant ID used for authenticating with Fabric APIs. Defaults to the TENANT_ID environment variable.")
-parser.add_argument("--client_id", required=False, default=os.environ.get('CLIENT_ID'), help="Client ID of the Azure AD application registered for accessing Fabric APIs. Defaults to the CLIENT_ID environment variable.")
-parser.add_argument("--client_secret", required=False, default=os.environ.get('CLIENT_SECRET'), help="Client secret of the Azure AD application registered for accessing Fabric APIs. Defaults to the CLIENT_SECRET environment variable.")
+parser.add_argument("--tenant_id", required=False, default=os.environ.get('FAB_TENANT_ID'), help="Azure Active Directory (Microsoft Entra ID) tenant ID used for authenticating with Fabric APIs. Defaults to the TENANT_ID environment variable.")
+parser.add_argument("--client_id", required=False, default=os.environ.get('FAB_SPN_CLIENT_ID'), help="Client ID of the Azure AD application registered for accessing Fabric APIs. Defaults to the CLIENT_ID environment variable.")
+parser.add_argument("--client_secret", required=False, default=os.environ.get('FAB_SPN_CLIENT_SECRET'), help="Client secret of the Azure AD application registered for accessing Fabric APIs. Defaults to the CLIENT_SECRET environment variable.")
 
 args = parser.parse_args()
 tenant_id = args.tenant_id

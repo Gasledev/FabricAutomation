@@ -14,10 +14,10 @@
     },
     "permissions": {
         "admin": [
-            {"type": "Group", "id": "00000000-0000-0000-0000-000000000000"}
+            {"type": "Group", "id": "32a268ea-bfef-4637-962f-c6b266a12320"}
         ],
         "contributor": [
-            {"type": "User", "id": "00000000-0000-0000-0000-000000000000"}
+            {"type": "User", "id": "d55902b5-7fd6-46a0-b3dc-e7c7a33b8300"}
         ]
     },
     "layers" : {
